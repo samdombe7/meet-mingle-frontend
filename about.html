@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeetMingle</title>
+  <!-- Correct CSS path -->
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="icon" href="./images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-section">
+        <img src="./images/logo.jpg" alt="MeetMingle Logo" class="logo">
+        <h1 class="site-name">MeetMingle</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Volunteer</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn signup" onclick="window.location.href='signup.html'">Sign Up</button>
+        <button class="btn login" onclick="window.location.href='login.html'">Log In</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- About Us Section -->
+      <section class="about-us fade-section">
+        <h2>About Us</h2>
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to empower individuals to make a difference in their communities by connecting them with meaningful volunteer opportunities and celebrating their contributions. 
+          We believe that everyone has something valuable to offer, and by working together, we can create positive change.
+        </p>
+        <div class="image-container fade-img">
+          <!-- ✅ Fixed image extension (bg1.png not bg1.jpg) -->
+          <img src="./images/bg1.png" alt="Volunteering" class="responsive-img">
+          <div class="text-overlay">
+            <p>Connecting volunteers with meaningful opportunities</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-it-works">
+        <h3>How It Works</h3>
+        <div class="steps">
+          <div class="step">
+            <img src="./images/find.png" alt="Find Opportunities" class="icon">
+            <p>Find Opportunities</p>
+          </div>
+          <div class="step">
+            <img src="./images/volunteer.png" alt="Volunteer" class="icon">
+            <p>Volunteer</p>
+          </div>
+          <div class="step">
+            <img src="./images/celebrate.png" alt="Celebrate" class="icon">
+            <p>Celebrate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Impact Section -->
+      <section class="impact fade-section">
+        <h3>Our Impact</h3>
+        <div class="stats">
+          <div class="stat">
+            <p>Volunteers</p>
+            <p class="number">5,000+</p>
+          </div>
+          <div class="stat">
+            <p>Hours Contributed</p>
+            <p class="number">10,000+</p>
+          </div>
+          <div class="stat">
+            <p>Events Hosted</p>
+            <p class="number">200+</p>
+          </div>
+        </div>
+        <p>
+          Since our launch, we've connected thousands of volunteers with opportunities to give back, resulting in over 10,000 hours of service and 200+ successful events. Join us in making a difference!
+        </p>
+        <div class="image-container fade-img">
+          <!-- ✅ Fixed image extension (bg2.png not bg2.jpg) -->
+          <img src="./images/bg2.png" alt="Community Impact" class="responsive-img">
+          <div class="text-overlay">
+            <p>Thousands of volunteers, countless lives touched</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <p>&copy; 2024 MeetMingle. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: purple;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: purple;
+}
+
+.login-btn {
+  background: purple;
+  color: white !important;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.login-btn:hover {
+  background: #5a0ea1;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg5.jpg") no-repeat center center/cover;
+  padding-top: 80px; /* push down to avoid navbar overlap */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  padding: 40px;
+  gap: 40px;
+  color: white;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ================= LOGIN BOX ================= */
+.login-box {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  color: black;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.login-box label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-row .forgot {
+  font-size: 0.9rem;
+  color: purple;
+  text-decoration: none;
+}
+
+.password-row .forgot:hover {
+  text-decoration: underline;
+}
+
+.login-box button {
+  width: 100%;
+  background: purple;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background: #5a0ea1;
+}
+
+.login-box .signup {
+  text-align: center;
+  margin-top: 15px;
+  color: black;
+}
+
+.login-box .signup a {
+  color: purple;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-box .signup a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text, .login-box {
+    flex: unset;
+    width: 100%;
+  }
+  .text h1 {
+    font-size: 2.2rem;
+  }
+  nav ul {
+    gap: 15px;
+  }
+}
